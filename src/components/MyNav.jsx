@@ -15,7 +15,7 @@ function MyNav(props) {
       }).then(response => {
         props.createResult(response);
       }).catch(err => {
-        console.log(err);
+        console.log("These aren't the droids you're looking for");
       });
     navigate('/' + myCategory + "/" + myId)
   }
