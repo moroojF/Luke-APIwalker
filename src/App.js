@@ -15,14 +15,16 @@ function App() {
   }
   return (
     <>
-      <MyNav createResult={createResult}/>
-      <Router>
-        
-        {
+      <MyNav createResult={createResult} />
+      <div className="container">
+        <Router>
+          <People path="/people/:myId" myResult={myResult} />
+          <Planets path="/planets/:myId" myResult={myResult} />
+          {/* {
           myResult.hasOwnProperty("height")?<People path="/:myCategory/:myId" myResult={myResult}/>:
           <Planets path="/:myCategory/:myId" myResult={myResult}/>
-        }
-      </Router>
+        } */}
+        </Router></div>
     </>
   );
 }
