@@ -46,7 +46,7 @@ function MyNav(props) {
         </div></div>
     </nav>
     {myError == "" ?
-      "" : <h5 className="text-center m-5" >
+      "" : <h5 className="text-center m-5 pt-3" >
         <span className="p-3 rounded-lg" style={{ color: "#fffea3", backgroundColor: "#D1E4EC" }}>{myError}</span>
       </h5>}
   </>
